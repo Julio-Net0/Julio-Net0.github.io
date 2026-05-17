@@ -6,11 +6,11 @@ Este projeto é mais do que uma galeria de trabalhos; é uma experimentação pr
 
 ## 🏗️ Arquitetura do Projeto
 
-Para garantir máxima performance e blindagem de escopo de estilos sem a necessidade de frameworks pesados, o portfólio adota uma arquitetura de "Monólitos HTML" com roteamento no lado do cliente:
+Para garantir máxima performance e blindagem de escopo de estilos sem a necessidade de frameworks pesados, o portfólio adota uma arquitetura de **Única Fonte de Verdade (Single Source of Truth)** combinada com **Stylesheet Swapping**:
 
-* **Theme Switcher Dinâmico:** O arquivo `index.html` atua como um randomizador e roteador, distribuindo as visitas para diferentes abordagens de UI/UX (Neomorfismo, Neo-brutalismo, Glassmorphism).
-* **Isolamento de Estilos:** Cada tema é um documento HTML independente, garantindo que as regras de CSS de um design (ex: sombras extrudadas do Neomorfismo) não interfiram na geometria de outro (ex: linhas finas do Bento Grid).
-* **Componentes Imersivos:** Projetos de maior escala (Premium) possuem sessões visuais próprias e isoladas, alterando completamente o fluxo da página para combinar com a tecnologia utilizada.
+* **HTML Unificado:** A estrutura semântica da página principal é mantida em um único arquivo genérico (`index.html`), garantindo facilidade de manutenção e escalabilidade de conteúdo.
+* **Theme Switcher Dinâmico (Stylesheet Swapping):** A alteração entre diferentes abordagens de UI/UX (Neomorfismo, Neo-brutalismo, Glassmorphism) ocorre em tempo real no lado do cliente. Um script Vanilla JS substitui o arquivo CSS injetado na página, garantindo que o usuário faça o download apenas do estilo ativo e proporcionando zero "vazamento" (bleeding) de geometria ou regras visuais entre os temas.
+* **Componentes Imersivos:** Projetos de maior escala (Premium) possuem páginas e sessões visuais próprias e isoladas, alterando completamente o fluxo da navegação para uma experiência 3D/interativa que combina com a tecnologia utilizada no respectivo projeto.
 
 ## 🛠️ Tecnologias e Habilidades em Destaque
 

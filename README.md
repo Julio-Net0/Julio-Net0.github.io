@@ -44,7 +44,7 @@ Estudante de Sistemas de Informação no CEFET-MG campus Varginha. Desenvolvedor
 Como o projeto é totalmente estático e não depende de build steps (Node.js/NPM), basta clonar o repositório e subir um servidor HTTP simples:
 
 ```bash
-git clone [https://github.com/Julio-Net0/Julio-Net0.github.io.git](https://github.com/Julio-Net0/Julio-Net0.github.io.git)
+git clone https://github.com/Julio-Net0/Julio-Net0.github.io.git
 cd Julio-Net0.github.io
 # Usando Python 3
 python -m http.server 8000
